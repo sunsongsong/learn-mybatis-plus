@@ -1,0 +1,18 @@
+spring:
+  datasource:
+    url: jdbc:mysql://139.9.63.165:3306/test?useUnicode=true&characterEncoding=UTF-8&autoReconnect=true&useSSL=false&zeroDateTimeBehavior=convertToNull&serverTimezone=UTC
+    username: root
+    password: Ss!805459487
+    driver-class-name: com.mysql.jdbc.Driver
+
+mybatis-plus:
+  mapper-locations: classpath:/mapper/*Mapper.xml
+    #实体扫描，多个package用逗号或者分号分隔
+  typeAliasesPackage: com.happyvicky.learnmybatisplus.entity
+
+logging:
+  level:
+    com:
+      happyvicky:
+        learnmybatisplus:
+          mapper: debug
